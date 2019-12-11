@@ -43,7 +43,16 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 
-	html << "<html>" << endl;
-	// TODO
-	html << "</html>" << endl;
+    html << "<!doctype html>" << endl;
+    html << "<html lang=\"fr\">" << endl;
+    html << "<head>" << endl;
+      html << "    <meta charset=\"utf-8\">" << endl;
+      html << "    <title>Titre de la page</title>" << endl;
+      html << "    <link rel=\"stylesheet\" href=\"style.css\">" << endl;
+      html << "    <script src=\"script.js\"></script>" << endl;
+    html << "</head>" << endl;
+    html << "<body>" << endl;
+
+    html << "</body>" << endl;
+    html << "</html>" << endl;
 }
