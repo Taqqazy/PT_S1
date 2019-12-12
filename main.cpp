@@ -25,13 +25,22 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 
+	html << "<!doctype html>" << endl;
+	html << "<html lang=\"fr\">" << endl;
+	html << "<head>" << endl;
+		html << "    <meta charset=\"utf-8\">" << endl;
+		html << "    <title>PT_S1</title>" << endl;
+	html << "</head>" << endl;
+	html << "<body>" << endl;
+
 	string line;
 	while(getline(csv, line))
 	{
-		// TODO: loop over lines in file
 		cout << line << endl;
-
 	}
+
+	html << "</body>" << endl;
+	html << "</html>" << endl;
 
 	// write file
 	string html_filename = "output.html";
@@ -42,17 +51,4 @@ int main(int argc, char **argv)
 		cout << "could not open html file" << endl;
 		exit(1);
 	}
-
-    html << "<!doctype html>" << endl;
-    html << "<html lang=\"fr\">" << endl;
-    html << "<head>" << endl;
-      html << "    <meta charset=\"utf-8\">" << endl;
-      html << "    <title>Titre de la page</title>" << endl;
-      html << "    <link rel=\"stylesheet\" href=\"style.css\">" << endl;
-      html << "    <script src=\"script.js\"></script>" << endl;
-    html << "</head>" << endl;
-    html << "<body>" << endl;
-
-    html << "</body>" << endl;
-    html << "</html>" << endl;
 }
