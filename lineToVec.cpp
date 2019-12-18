@@ -1,4 +1,4 @@
-#include "pullsh.h"
+#include "lineToVec.h"
 
 vector<string> lineToVec(const string &ligne) {
     vector<string> vectemp;
@@ -9,8 +9,8 @@ vector<string> lineToVec(const string &ligne) {
             strtemp+=ligne[i];
             i++;
         }
+        i++;
         vectemp.push_back(strtemp);
     }
-
     return vectemp;
 }

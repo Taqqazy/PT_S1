@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1576662976 source:z:\github\pt_s1\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<cstdlib>
+	"pullsh.h"
+
+1576662640 z:\github\pt_s1\pullsh.h
+	<iostream>
+	<vector>
+
+1576662963 source:z:\github\pt_s1\pullsh.cpp
+	"pullsh.h"
+

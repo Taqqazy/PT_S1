@@ -31,12 +31,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="lineToVec.cpp" />
+		<Unit filename="lineToVec.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="pullsh.cpp" />
-		<Unit filename="pullsh.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

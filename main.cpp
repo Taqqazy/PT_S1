@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
-#include "pullsh.h"
+#include "lineToVec.h"
 
 using namespace std;
 
@@ -25,7 +25,7 @@ int main()
 	while(getline(csv, line))
 	{
 		vector<string>vectemp=lineToVec(line);
-		cout << vectemp[1];
+		cout << vectemp[] << endl;
 	}
 
 
