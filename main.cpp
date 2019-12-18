@@ -3,20 +3,15 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
+#include "pullsh.h"
 
 using namespace std;
 
-int main(int argc, char **argv)
+int main()
 {
-	if(argc != 2)
-	{
-		cout << "Usage: " << argv[0] << " csv" << endl;
-		exit(1);
-	}
-
 	// read file
 
-	string csv_filename = argv[1];
+	string csv_filename = "perso.csv";
 
 	ifstream csv(csv_filename);
 	if(!csv.is_open())
@@ -25,22 +20,14 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 
-	html << "<!doctype html>" << endl;
-	html << "<html lang=\"fr\">" << endl;
-	html << "<head>" << endl;
-		html << "    <meta charset=\"utf-8\">" << endl;
-		html << "    <title>PT_S1</title>" << endl;
-	html << "</head>" << endl;
-	html << "<body>" << endl;
 
 	string line;
 	while(getline(csv, line))
 	{
-		cout << line << endl;
+		vector<string>vectemp=lineToVec(line);
+		cout << vectemp[1];
 	}
 
-	html << "</body>" << endl;
-	html << "</html>" << endl;
 
 	// write file
 	string html_filename = "output.html";
@@ -51,4 +38,9 @@ int main(int argc, char **argv)
 		cout << "could not open html file" << endl;
 		exit(1);
 	}
+
+	html << "<html>" << endl;
+	// TODO
+	html << "</html>" << endl;
 }
+

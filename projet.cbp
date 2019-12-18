@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="pullsh.cpp" />
+		<Unit filename="pullsh.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
