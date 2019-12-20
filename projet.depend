@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1576662976 source:z:\github\pt_s1\main.cpp
+1576838409 source:z:\github\pt_s1\main.cpp
 	<iostream>
 	<fstream>
 	<string>
 	<vector>
 	<cstdlib>
-	"pullsh.h"
+	"lineToVec.h"
 
 1576662640 z:\github\pt_s1\pullsh.h
 	<iostream>
@@ -13,4 +13,11 @@
 
 1576662963 source:z:\github\pt_s1\pullsh.cpp
 	"pullsh.h"
+
+1576663259 source:z:\github\pt_s1\linetovec.cpp
+	"lineToVec.h"
+
+1576662640 z:\github\pt_s1\linetovec.h
+	<iostream>
+	<vector>
 

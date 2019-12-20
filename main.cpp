@@ -20,17 +20,7 @@ int main()
 		exit(1);
 	}
 
-
-	string line;
-	while(getline(csv, line))
-	{
-		vector<string>vectemp=lineToVec(line);
-		cout << vectemp[] << endl;
-	}
-
-
-	// write file
-	string html_filename = "output.html";
+    string html_filename = "output.html";
 
 	ofstream html(html_filename);
 	if(!html.is_open())
@@ -39,8 +29,27 @@ int main()
 		exit(1);
 	}
 
-	html << "<html>" << endl;
-	// TODO
-	html << "</html>" << endl;
+    html << "<!DOCTYPE html>" << endl;
+    html << "<html lang=\"fr\" dir=\"ltr\">" << endl;
+    html << "   <head>" << endl;
+    html << "       <meta charset=\"utf-8\">" << endl;
+    html << "       <title>Projet tutoré S1</title>" << endl;
+    html << "   </head>" << endl;
+    html << "   <body>" << endl;
+
+	string line;
+	while(getline(csv, line))
+	{
+		vector<string>vectemp=lineToVec(line);
+		html << "       <p>";
+		for(unsigned int i=0; i<5; i++)
+        {
+            html << vectemp[i] << " ";
+        }
+        html << "</p>" << endl;
+	}
+
+	html << "   </body>" << endl;
+	html << "</html>";
 }
 
