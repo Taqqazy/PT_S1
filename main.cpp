@@ -4,6 +4,7 @@
 #include <vector>
 #include <cstdlib>
 #include "lineToVec.h"
+#include "htmlSyntaxe.h"
 
 using namespace std;
 
@@ -29,13 +30,7 @@ int main()
 		exit(1);
 	}
 
-    html << "<!DOCTYPE html>" << endl;
-    html << "<html lang=\"fr\" dir=\"ltr\">" << endl;
-    html << "   <head>" << endl;
-    html << "       <meta charset=\"utf-8\">" << endl;
-    html << "       <title>Projet tutoré S1</title>" << endl;
-    html << "   </head>" << endl;
-    html << "   <body>" << endl;
+    htmlSyntaxe(html);
 
 	string line;
 	while(getline(csv, line))
