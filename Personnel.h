@@ -2,6 +2,7 @@
 #define PERSONNEL_H_INCLUDED
 #include <vector>
 #include <string>
+#include <cstring>
 
 using namespace std;
 
@@ -9,7 +10,8 @@ class Personnel
 {
 public:
     Personnel(int, vector<string>);
-    string get_login();
+    string get_login() const;
+    string get_nom() const;
 
 private:
     int num;
@@ -20,5 +22,7 @@ private:
     string firm;
     bool image;
 };
+
+bool operator<(Personnel const&, Personnel const&);
 
 #endif // PERSONNEL_H_INCLUDED

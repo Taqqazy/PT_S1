@@ -2,6 +2,7 @@
 #include "lineToVec.h"
 #include "htmlSyntaxe.h"
 #include "Personnel.h"
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -38,6 +39,13 @@ int main()
         cout << vecPers[i].get_login() << endl;
         i++;
 	}
+
+	sort(vecPers.begin(), vecPers.end());
+
+	for(int i=0; i<vecPers.size(); i++)
+    {
+        cout << "tri : " << vecPers[i].get_login() << endl;
+    }
 
 	html << "   </body>" << endl;
 	html << "</html>";

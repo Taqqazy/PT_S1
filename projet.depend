@@ -27,3 +27,33 @@
 1578241521 source:c:\github\pt_s1\personnel.cpp
 	"Personnel.h"
 
+1578238513 source:c:\github\pt_s1 local save\htmlsyntaxe.cpp
+	"htmlSyntaxe.h"
+
+1578238513 c:\github\pt_s1 local save\htmlsyntaxe.h
+	<iostream>
+	<fstream>
+	<string>
+
+1578253129 source:c:\github\pt_s1 local save\personnel.cpp
+	"Personnel.h"
+
+1578253715 c:\github\pt_s1 local save\personnel.h
+	<vector>
+	<string>
+	<cstring>
+
+1578253562 source:c:\github\pt_s1 local save\main.cpp
+	<cstdlib>
+	"lineToVec.h"
+	"htmlSyntaxe.h"
+	"Personnel.h"
+	<bits/stdc++.h>
+
+1576669151 c:\github\pt_s1 local save\linetovec.h
+	<iostream>
+	<vector>
+
+1578252273 source:c:\github\pt_s1 local save\linetovec.cpp
+	"lineToVec.h"
+
