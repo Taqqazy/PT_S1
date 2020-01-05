@@ -1,10 +1,7 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
 #include <cstdlib>
 #include "lineToVec.h"
 #include "htmlSyntaxe.h"
+#include "Personnel.h"
 
 using namespace std;
 
@@ -33,15 +30,13 @@ int main()
     htmlSyntaxe(html);
 
 	string line;
+	vector<Personnel> vecPers;
+	int i=0;
 	while(getline(csv, line))
 	{
-		vector<string>vectemp=lineToVec(line);
-		html << "       <p>";
-		for(unsigned int i=0; i<5; i++)
-        {
-            html << vectemp[i] << " ";
-        }
-        html << "</p>" << endl;
+        vecPers.push_back(Personnel(i, lineToVec(line)));
+        cout << vecPers[i].get_login() << endl;
+        i++;
 	}
 
 	html << "   </body>" << endl;

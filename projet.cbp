@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,6 +33,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Personnel.cpp" />
+		<Unit filename="Personnel.h" />
+		<Unit filename="htmlSyntaxe.cpp" />
+		<Unit filename="htmlSyntaxe.h" />
 		<Unit filename="lineToVec.cpp" />
 		<Unit filename="lineToVec.h" />
 		<Unit filename="main.cpp" />
