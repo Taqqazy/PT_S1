@@ -22,29 +22,9 @@ string Personnel::get_nom() const
     return nom;
 }
 
-/*bool operator<(Personnel const &a, Personnel const &b)
-{
-    char temp1[20], temp2[20];
-    strcpy(temp1, a.get_nom().c_str());
-    strcpy(temp2, b.get_nom().c_str());
-    if( strcmp(temp1, temp2) < 0 )
-        return false;
-    else return true;
-}*/
-
 bool operator<(Personnel const &a, Personnel const &b)
 {
     if( a.get_nom() < b.get_nom() )
         return true;
     else return false;
 }
-
-/*bool operator>(Personnel const &a, Personnel const &b)
-{
-    char temp1[20], temp2[20];
-    strcpy(temp1, a.get_nom().c_str());
-    strcpy(temp2, b.get_nom().c_str());
-    if( strcmp(temp1, temp2) > 0 )
-        return false;
-    else return true;
-}*/
