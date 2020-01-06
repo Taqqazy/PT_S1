@@ -1,5 +1,5 @@
 #include "Personnel.h"
-#include "lineToVec.h"
+#include "misc.h"
 
 Personnel::Personnel(int i, vector<string> vec)
 {

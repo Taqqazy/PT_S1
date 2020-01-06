@@ -37,9 +37,9 @@
 		<Unit filename="Personnel.h" />
 		<Unit filename="htmlSyntaxe.cpp" />
 		<Unit filename="htmlSyntaxe.h" />
-		<Unit filename="lineToVec.cpp" />
-		<Unit filename="lineToVec.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="misc.cpp" />
+		<Unit filename="misc.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

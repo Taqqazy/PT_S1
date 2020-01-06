@@ -1,5 +1,5 @@
 #include <cstdlib>
-#include "lineToVec.h"
+#include "misc.h"
 #include "htmlSyntaxe.h"
 #include "Personnel.h"
 #include <algorithm>
@@ -9,8 +9,7 @@ using namespace std;
 int main()
 {
 	// read file
-
-	string csv_filename = "perso.csv";
+	string csv_filename = "src/perso.csv";
 
 	ifstream csv(csv_filename);
 	if(!csv.is_open())
