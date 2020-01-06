@@ -94,3 +94,31 @@
 	<vector>
 	<string>
 
+1578295963 source:z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.cpp
+	"htmlSyntaxe.h"
+
+1578295963 z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.h
+	<iostream>
+	<fstream>
+	<string>
+
+1578298713 source:z:\s1\m1106 projet tutore\pt_s1\main.cpp
+	<cstdlib>
+	"misc.h"
+	"htmlSyntaxe.h"
+	"Personnel.h"
+	<algorithm>
+
+1578298713 z:\s1\m1106 projet tutore\pt_s1\misc.h
+	<iostream>
+	<vector>
+	<string>
+
+1578299231 z:\s1\m1106 projet tutore\pt_s1\personnel.h
+	<vector>
+	<string>
+	<cstring>
+
+1578298713 source:z:\s1\m1106 projet tutore\pt_s1\misc.cpp
+	"misc.h"
+

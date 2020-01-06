@@ -9,7 +9,8 @@ Personnel::Personnel(int i, vector<string> vec)
     prenom=normalisation(vec[2]);
     job=vec[3];
     firm=vec[4];
-    image=stoi(vec[5].c_str());
+    if(stoi(vec[5].c_str()))
+        image=login+".jpg";
 }
 
 string Personnel::get_login() const

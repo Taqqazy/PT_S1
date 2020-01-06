@@ -20,7 +20,7 @@ private:
     string prenom;
     string job;
     string firm;
-    bool image;
+    string image;
 };
 
 bool operator<(Personnel const&, Personnel const&);

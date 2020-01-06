@@ -33,6 +33,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Entreprise.cpp" />
+		<Unit filename="Entreprise.h" />
 		<Unit filename="Personnel.cpp" />
 		<Unit filename="Personnel.h" />
 		<Unit filename="htmlSyntaxe.cpp" />
