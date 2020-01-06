@@ -14,3 +14,16 @@ vector<string> lineToVec(const string &ligne) {
     }
     return vectemp;
 }
+
+string normalisation(string &s)
+{
+    s[0]=toupper(s[0]);
+    if(s.length()>1)
+    {
+        for(unsigned int i=1; i<s.length(); i++)
+        {
+            s[i]=tolower(s[i]);
+        }
+    }
+    return s;
+}

@@ -57,3 +57,35 @@
 1578252273 source:c:\github\pt_s1 local save\linetovec.cpp
 	"lineToVec.h"
 
+1578295137 source:z:\github\pt_s1\htmlsyntaxe.cpp
+	"htmlSyntaxe.h"
+
+1578295137 z:\github\pt_s1\htmlsyntaxe.h
+	<iostream>
+	<fstream>
+	<string>
+
+1578296271 source:z:\github\pt_s1\linetovec.cpp
+	"lineToVec.h"
+
+1578296138 z:\github\pt_s1\linetovec.h
+	<iostream>
+	<vector>
+	<string>
+
+1578296850 source:z:\github\pt_s1\main.cpp
+	<cstdlib>
+	"lineToVec.h"
+	"htmlSyntaxe.h"
+	"Personnel.h"
+	<algorithm>
+
+1578296663 z:\github\pt_s1\personnel.h
+	<vector>
+	<string>
+	<cstring>
+
+1578296884 source:z:\github\pt_s1\personnel.cpp
+	"Personnel.h"
+	"lineToVec.h"
+

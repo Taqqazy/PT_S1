@@ -2,7 +2,7 @@
 #include "lineToVec.h"
 #include "htmlSyntaxe.h"
 #include "Personnel.h"
-#include <bits/stdc++.h>
+#include <algorithm>
 
 using namespace std;
 

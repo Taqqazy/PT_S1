@@ -24,5 +24,6 @@ private:
 };
 
 bool operator<(Personnel const&, Personnel const&);
+bool operator>(Personnel const &a, Personnel const &b);
 
 #endif // PERSONNEL_H_INCLUDED
