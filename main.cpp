@@ -43,7 +43,7 @@ int main()
 
 	for(int i=0; i<vecPers.size(); i++)
     {
-        cout << "tri : " << vecPers[i].get_nom() << endl;
+        html << vecPers[i];
     }
 
 	html << "   </body>" << endl;
