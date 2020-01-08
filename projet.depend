@@ -130,7 +130,9 @@
 1578472889 source:z:\s1\m1106 projet tutore\pt_s1\misc.cpp
 	"misc.h"
 
-1578430437 source:c:\github\pt_s1\entreprise.cpp
+1578496823 source:c:\github\pt_s1\entreprise.cpp
+	"Entreprise.h"
+	"misc.h"
 
 1578496406 c:\github\pt_s1\misc.h
 	<iostream>
@@ -158,4 +160,9 @@
 1578475255 source:z:\s1\m1106 projet tutore\pt_s1\personnel.cpp
 	"Personnel.h"
 	"misc.h"
+
+1578496587 c:\github\pt_s1\entreprise.h
+	<string>
+	<vector>
+	"Personnel.h"
 

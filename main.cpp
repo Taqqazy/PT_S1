@@ -2,6 +2,7 @@
 #include "misc.h"
 #include "htmlSyntaxe.h"
 #include "Personnel.h"
+#include "Entreprise.h"
 #include <algorithm>
 
 using namespace std;
@@ -9,10 +10,10 @@ using namespace std;
 int main()
 {
 	// read file
-	string csv_filename = "src/perso.csv";
+	string csv_filename = "src/perso.csv", ent_filename= "src/entreprise.csv";
 
-	ifstream csv(csv_filename);
-	if(!csv.is_open())
+	ifstream csv(csv_filename), ent(ent_filename);
+	if(!csv.is_open() || !ent.is_open())
 	{
 		cout << "csv file not found" << endl;
 		exit(1);
@@ -28,19 +29,23 @@ int main()
 	}
 
     htmlSyntaxe(html);
-    vector<string> veccc=lineToVec("Pers|tres|image");
-    cout << veccc[0] << veccc[1] << veccc[2];
 	string line;
 	vector<Personnel> vecPers;
-	int i=0;
 	while(getline(csv, line))
 	{
         vecPers.push_back(Personnel(lineToVec(line)));
-        cout << vecPers[i].get_login() << endl;
-        i++;
 	}
+    sort(vecPers.begin(), vecPers.end());
 
-	sort(vecPers.begin(), vecPers.end());
+	vector<Entreprise> vecEnt;
+	while(getline(ent, line))
+    {
+        vecEnt.push_back(Entreprise(lineToVec(line)));
+    }
+
+    entrepriseAssign(vecEnt, vecPers);
+
+
 
 	for(int i=0; i<vecPers.size(); i++)
     {
