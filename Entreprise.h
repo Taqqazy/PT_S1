@@ -8,6 +8,8 @@ public:
 private:
     vector<Personnel> vecPersEnt;
     string name;
+    string slogan;
+    string logo;
 
 };
 
