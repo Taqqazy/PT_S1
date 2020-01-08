@@ -100,10 +100,10 @@
 	<string>
 	<algorithm>
 
-1578295963 source:z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.cpp
+1578472889 source:z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.cpp
 	"htmlSyntaxe.h"
 
-1578295963 z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.h
+1578472889 z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.h
 	<iostream>
 	<fstream>
 	<string>
@@ -115,17 +115,19 @@
 	"Personnel.h"
 	<algorithm>
 
-1578298713 z:\s1\m1106 projet tutore\pt_s1\misc.h
+1578472889 z:\s1\m1106 projet tutore\pt_s1\misc.h
 	<iostream>
 	<vector>
 	<string>
+	<algorithm>
 
-1578299231 z:\s1\m1106 projet tutore\pt_s1\personnel.h
+1578474215 z:\s1\m1106 projet tutore\pt_s1\personnel.h
 	<vector>
 	<string>
 	<cstring>
+	<iostream>
 
-1578298713 source:z:\s1\m1106 projet tutore\pt_s1\misc.cpp
+1578472889 source:z:\s1\m1106 projet tutore\pt_s1\misc.cpp
 	"misc.h"
 
 1578430437 source:c:\github\pt_s1\entreprise.cpp
@@ -142,4 +144,13 @@
 
 1578472000 source:z:\github\pt_s1\misc.cpp
 	"misc.h"
+
+1578474214 source:z:\s1\m1106 projet tutore\pt_s1\entreprise.cpp
+	"Entreprise.h"
+	"misc.h"
+
+1578474488 z:\s1\m1106 projet tutore\pt_s1\entreprise.h
+	<string>
+	<vector>
+	"Personnel.h"
 

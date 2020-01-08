@@ -1,9 +1,8 @@
 #include "Personnel.h"
 #include "misc.h"
 
-Personnel::Personnel(int i, vector<string> vec)
+Personnel::Personnel(vector<string> vec)
 {
-    num=i;
     login=vec[0];
     nom=normalisation(vec[1]);
     prenom=normalisation(vec[2]);

@@ -28,13 +28,14 @@ int main()
 	}
 
     htmlSyntaxe(html);
-
+    //vector<string> veccc=lineToVec("Pers|tres|image");
+    //cout << veccc[0] << veccc[1] << veccc[2];
 	string line;
 	vector<Personnel> vecPers;
 	int i=0;
 	while(getline(csv, line))
 	{
-        vecPers.push_back(Personnel(i, lineToVec(line)));
+        vecPers.push_back(Personnel(lineToVec(line)));
         cout << vecPers[i].get_login() << endl;
         i++;
 	}

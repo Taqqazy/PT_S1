@@ -10,7 +10,7 @@ using namespace std;
 class Personnel
 {
 public:
-    Personnel(int, vector<string>);
+    Personnel(vector<string>);
     string get_login() const;
     string get_nom() const;
     string get_prenom() const;
