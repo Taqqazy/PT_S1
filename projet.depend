@@ -77,26 +77,28 @@
 	<vector>
 	<string>
 
-1578298540 source:z:\github\pt_s1\main.cpp
+1578471555 source:z:\github\pt_s1\main.cpp
 	<cstdlib>
 	"misc.h"
 	"htmlSyntaxe.h"
 	"Personnel.h"
 	<algorithm>
 
-1578297679 z:\github\pt_s1\personnel.h
+1578471555 z:\github\pt_s1\personnel.h
 	<vector>
 	<string>
 	<cstring>
+	<iostream>
 
-1578298540 source:z:\github\pt_s1\personnel.cpp
+1578471555 source:z:\github\pt_s1\personnel.cpp
 	"Personnel.h"
 	"misc.h"
 
-1578296138 z:\github\pt_s1\misc.h
+1578472027 z:\github\pt_s1\misc.h
 	<iostream>
 	<vector>
 	<string>
+	<algorithm>
 
 1578295963 source:z:\s1\m1106 projet tutore\pt_s1\htmlsyntaxe.cpp
 	"htmlSyntaxe.h"
@@ -135,4 +137,6 @@
 
 1578430437 source:c:\github\pt_s1\misc.cpp
 	"misc.h"
+
+1578471555 source:z:\github\pt_s1\entreprise.cpp
 

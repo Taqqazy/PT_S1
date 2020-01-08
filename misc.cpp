@@ -3,7 +3,7 @@
 vector<string> lineToVec(const string &ligne) {
     vector<string> vectemp;
     unsigned int i=0;
-    for(int y=0;y<6;y++) {
+    for(int y=0;y<count(ligne.begin(),ligne.end(), '|')+1;y++) {
         string strtemp="";
         while(ligne[i]!='|' && i<ligne.size()) {
             strtemp+=ligne[i];
