@@ -6,7 +6,7 @@
 	<iostream>
 	<vector>
 
-1578431254 source:c:\github\pt_s1\main.cpp
+1578496406 source:c:\github\pt_s1\main.cpp
 	<cstdlib>
 	"misc.h"
 	"htmlSyntaxe.h"
@@ -21,13 +21,13 @@
 1578238513 source:c:\github\pt_s1\htmlsyntaxe.cpp
 	"htmlSyntaxe.h"
 
-1578431227 c:\github\pt_s1\personnel.h
+1578496406 c:\github\pt_s1\personnel.h
 	<vector>
 	<string>
 	<cstring>
 	<iostream>
 
-1578431835 source:c:\github\pt_s1\personnel.cpp
+1578496406 source:c:\github\pt_s1\personnel.cpp
 	"Personnel.h"
 	"misc.h"
 
@@ -132,12 +132,13 @@
 
 1578430437 source:c:\github\pt_s1\entreprise.cpp
 
-1578430437 c:\github\pt_s1\misc.h
+1578496406 c:\github\pt_s1\misc.h
 	<iostream>
 	<vector>
 	<string>
+	<algorithm>
 
-1578430437 source:c:\github\pt_s1\misc.cpp
+1578496406 source:c:\github\pt_s1\misc.cpp
 	"misc.h"
 
 1578471555 source:z:\github\pt_s1\entreprise.cpp

@@ -14,6 +14,7 @@ public:
     string get_nom() const;
     string get_slogan() const;
     string get_nomlogo() const;
+    void addPers(Personnel);
 
 private:
     vector<Personnel> vecPersEnt;
@@ -21,5 +22,7 @@ private:
     string slogan;
     string nomlogo;
 };
+
+void entrepriseAssign(vector<Entreprise> ent, vector<Personnel> pers);
 
 #endif // ENTREPRISE_H_INCLUDED
