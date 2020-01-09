@@ -6,11 +6,12 @@
 	<iostream>
 	<vector>
 
-1578496406 source:c:\github\pt_s1\main.cpp
+1578597034 source:c:\github\pt_s1\main.cpp
 	<cstdlib>
 	"misc.h"
 	"htmlSyntaxe.h"
 	"Personnel.h"
+	"Entreprise.h"
 	<algorithm>
 
 1578238513 c:\github\pt_s1\htmlsyntaxe.h
@@ -130,7 +131,7 @@
 1578472889 source:z:\s1\m1106 projet tutore\pt_s1\misc.cpp
 	"misc.h"
 
-1578496823 source:c:\github\pt_s1\entreprise.cpp
+1578597071 source:c:\github\pt_s1\entreprise.cpp
 	"Entreprise.h"
 	"misc.h"
 
@@ -161,7 +162,7 @@
 	"Personnel.h"
 	"misc.h"
 
-1578496587 c:\github\pt_s1\entreprise.h
+1578597071 c:\github\pt_s1\entreprise.h
 	<string>
 	<vector>
 	"Personnel.h"

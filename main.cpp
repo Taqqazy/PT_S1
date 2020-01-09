@@ -44,7 +44,10 @@ int main()
     }
 
     entrepriseAssign(vecEnt, vecPers);
-
+    for(int i=0; i<vecEnt.size(); i++)
+    {
+        cout << vecEnt[i].get_vecPersEnt().size() << endl;
+    }
 
 
 	for(int i=0; i<vecPers.size(); i++)

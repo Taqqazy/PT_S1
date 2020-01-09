@@ -13,16 +13,17 @@ public:
     Entreprise(vector<string>);
     string get_nom() const;
     string get_slogan() const;
-    string get_nomlogo() const;
+    string get_nomLogo() const;
     void addPers(Personnel);
+    vector<Personnel> get_vecPersEnt() const;
 
 private:
     vector<Personnel> vecPersEnt;
     string nom;
     string slogan;
-    string nomlogo;
+    string nomLogo;
 };
 
-void entrepriseAssign(vector<Entreprise> ent, vector<Personnel> pers);
+void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers);
 
 #endif // ENTREPRISE_H_INCLUDED
