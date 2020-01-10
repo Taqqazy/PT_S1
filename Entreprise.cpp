@@ -14,6 +14,11 @@ string Entreprise::get_nom() const
     return nom;
 }
 
+string Entreprise::get_nomLogo() const
+{
+    return nomLogo;
+}
+
 void Entreprise::addPers(Personnel pers)
 {
     vecPersEnt.push_back(pers);
@@ -34,5 +39,11 @@ void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers)
                 ent[i].addPers(pers[y]);
         }
     }
+}
+
+ostream& operator<<(ostream& os, Entreprise& ent)
+{
+    os << "      <img src=" << "\"src\/logos\/" << ent.get_nomLogo() <<"\" alt=\"Logo de " << ent.get_nom() << "\" width=\"105\" height=\"105\" >";
+    return os;
 }
 

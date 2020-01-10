@@ -25,5 +25,6 @@ private:
 };
 
 void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers);
+ostream& operator<<(ostream& os, Entreprise& ent);
 
 #endif // ENTREPRISE_H_INCLUDED

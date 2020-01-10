@@ -62,10 +62,10 @@
 1578252273 source:c:\github\pt_s1 local save\linetovec.cpp
 	"lineToVec.h"
 
-1578295137 source:z:\github\pt_s1\htmlsyntaxe.cpp
+1578476876 source:z:\github\pt_s1\htmlsyntaxe.cpp
 	"htmlSyntaxe.h"
 
-1578295137 z:\github\pt_s1\htmlsyntaxe.h
+1578476876 z:\github\pt_s1\htmlsyntaxe.h
 	<iostream>
 	<fstream>
 	<string>
@@ -78,24 +78,25 @@
 	<vector>
 	<string>
 
-1578471555 source:z:\github\pt_s1\main.cpp
+1578665062 source:z:\github\pt_s1\main.cpp
 	<cstdlib>
 	"misc.h"
 	"htmlSyntaxe.h"
 	"Personnel.h"
+	"Entreprise.h"
 	<algorithm>
 
-1578471555 z:\github\pt_s1\personnel.h
+1578476876 z:\github\pt_s1\personnel.h
 	<vector>
 	<string>
 	<cstring>
 	<iostream>
 
-1578471555 source:z:\github\pt_s1\personnel.cpp
+1578476876 source:z:\github\pt_s1\personnel.cpp
 	"Personnel.h"
 	"misc.h"
 
-1578472027 z:\github\pt_s1\misc.h
+1578476876 z:\github\pt_s1\misc.h
 	<iostream>
 	<vector>
 	<string>
@@ -144,9 +145,11 @@
 1578496406 source:c:\github\pt_s1\misc.cpp
 	"misc.h"
 
-1578471555 source:z:\github\pt_s1\entreprise.cpp
+1578664999 source:z:\github\pt_s1\entreprise.cpp
+	"Entreprise.h"
+	"misc.h"
 
-1578472000 source:z:\github\pt_s1\misc.cpp
+1578476876 source:z:\github\pt_s1\misc.cpp
 	"misc.h"
 
 1578474214 source:z:\s1\m1106 projet tutore\pt_s1\entreprise.cpp
@@ -163,6 +166,11 @@
 	"misc.h"
 
 1578597071 c:\github\pt_s1\entreprise.h
+	<string>
+	<vector>
+	"Personnel.h"
+
+1578663564 z:\github\pt_s1\entreprise.h
 	<string>
 	<vector>
 	"Personnel.h"
