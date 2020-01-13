@@ -53,7 +53,7 @@ ostream& operator<<(ostream& os, const Personnel& pers)
 {
     if(pers.get_image())
     {
-        os<< "      <img src=" << "\"src\/images\/"+pers.get_login()+".jpg\" alt=\"Photo de " << pers.get_nom() << " " << pers.get_prenom() << "\">" << endl;
+        os<< "      <img src=" << "\"src\/images\/"+pers.get_login()+".jpg\" alt=\"Photo de " << pers.get_nom() << " " << pers.get_prenom() << "\" width=\"105\" height=\"135\">" << endl;
     }
     os<< "      <p>" << pers.get_nom() << " " <<pers.get_prenom() << "<br\>" << pers.get_job() << "<p>" << endl;
     return os;

@@ -175,3 +175,43 @@
 	<vector>
 	"Personnel.h"
 
+1578583231 source:d:\iut\pt_s1\htmlsyntaxe.cpp
+	"htmlSyntaxe.h"
+
+1578583231 d:\iut\pt_s1\htmlsyntaxe.h
+	<iostream>
+	<fstream>
+	<string>
+
+1578898604 source:d:\iut\pt_s1\main.cpp
+	<cstdlib>
+	"misc.h"
+	"htmlSyntaxe.h"
+	"Personnel.h"
+	"Entreprise.h"
+	<algorithm>
+
+1578583231 d:\iut\pt_s1\misc.h
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+
+1578583231 d:\iut\pt_s1\personnel.h
+	<vector>
+	<string>
+	<cstring>
+	<iostream>
+
+1578898604 d:\iut\pt_s1\entreprise.h
+	<string>
+	<vector>
+	"Personnel.h"
+
+1578583231 source:d:\iut\pt_s1\misc.cpp
+	"misc.h"
+
+1578900124 source:d:\iut\pt_s1\personnel.cpp
+	"Personnel.h"
+	"misc.h"
+

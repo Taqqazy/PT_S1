@@ -35,8 +35,12 @@ void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers)
     {
         for(unsigned int y=0; y<pers.size(); y++)
         {
-            if(ent[i].get_nom()==pers[y].get_firm())
+            if(ent[i].get_nom()==pers[y].get_firm()) {
                 ent[i].addPers(pers[y]);
+                pers.erase(pers.begin()+y);
+                y--;
+            }
+
         }
     }
 }
@@ -44,6 +48,10 @@ void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers)
 ostream& operator<<(ostream& os, Entreprise& ent)
 {
     os << "      <img src=" << "\"src\/logos\/" << ent.get_nomLogo() <<"\" alt=\"Logo de " << ent.get_nom() << "\" width=\"105\" height=\"105\" >";
+    vector<Personnel> vecPersEnt = ent.get_vecPersEnt();
+    for(int i=0; i<vecPersEnt.size(); i++) {
+            os << vecPersEnt[i];
+    }
     return os;
 }
 
