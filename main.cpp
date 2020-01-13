@@ -3,6 +3,7 @@
 #include "htmlSyntaxe.h"
 #include "Personnel.h"
 #include "Entreprise.h"
+#include "makeCss.h"
 #include <algorithm>
 
 using namespace std;
@@ -20,8 +21,10 @@ int main()
     }
 
     string html_filename = "output.html";
+    string css_filename = "style.css";
 
     ofstream html(html_filename);
+    ofstream css(css_filename);
     if(!html.is_open())
     {
         cout << "could not open html file" << endl;
@@ -41,6 +44,7 @@ int main()
     bool mode;
     cout << "Quel mode voulez vous utiliser ? 0=Personnel, 1=Entreprise" << endl;
     cin >> mode;
+    makeCss(css, mode);
     if(!mode)
     {
         for(int i=0; i<vecPers.size(); i++)

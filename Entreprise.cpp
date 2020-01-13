@@ -47,11 +47,13 @@ void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers)
 
 ostream& operator<<(ostream& os, Entreprise& ent)
 {
-    os << "      <img src=" << "\"src\/logos\/" << ent.get_nomLogo() <<"\" alt=\"Logo de " << ent.get_nom() << "\" width=\"105\" height=\"105\" >";
+    os << "<div class=\"ent\">" << endl;
+    os << "     <img class=\"logo_ent\" src=\"src/logos/" << ent.get_nomLogo() <<"\" alt=\"Logo de " << ent.get_nom() << "\" width=\"105\" height=\"105\" >" << endl;
     vector<Personnel> vecPersEnt = ent.get_vecPersEnt();
     for(int i=0; i<vecPersEnt.size(); i++) {
             os << vecPersEnt[i];
     }
+    os << "</div>" << endl;
     return os;
 }
 
