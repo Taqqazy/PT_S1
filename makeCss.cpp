@@ -1,18 +1,22 @@
 #include "makeCss.h"
 
 void makeCss(ofstream &css, bool mode) {
-    css << ".logo_ent {" << endl;
-    css << "    display: block;" << endl;
-    css << "    margin: 0 auto 20px;" << endl;
-    css << "}" << endl << endl;
-    css << ".ent {" << endl;
-    css << "    border: solid black;" << endl;
-    css << "    padding: 20px;" << endl;
-    css << "    width: 90%;" << endl;
-    css << "    height: auto;" << endl;
-    css << "    text-align: center;" << endl;
-    css << "    margin: 0 auto 30px auto;" << endl;
-    css << "}" << endl << endl;
+//prend en parametres une ref a un flux de sortie et le booleen de choix
+//renvoie dans le flux de sortie du css qui en fonction du choix stylisera la page
+    if(mode) {
+        css << ".logo_ent {" << endl;
+        css << "    display: block;" << endl;
+        css << "    margin: 0 auto 20px;" << endl;
+        css << "}" << endl << endl;
+        css << ".ent {" << endl;
+        css << "    border: solid black;" << endl;
+        css << "    padding: 20px;" << endl;
+        css << "    width: 90%;" << endl;
+        css << "    height: auto;" << endl;
+        css << "    text-align: center;" << endl;
+        css << "    margin: 0 auto 30px auto;" << endl;
+        css << "}" << endl << endl;
+    }
     css << ".photo {" << endl;
     css << "    width: 105px;" << endl;
     css << "    height: 135px;" << endl;
@@ -32,11 +36,9 @@ void makeCss(ofstream &css, bool mode) {
     css << "}" << endl << endl;
     css << ".pers {" << endl;
     css << "    width: auto;" << endl;
+    if(mode) css << "    float: left;" << endl;
     css << "    height: 200px;" << endl;
     css << "    margin: 10px;" << endl;
     css << "    text-align: center;" << endl;
     css << "}" << endl << endl;
-    css << ".ent .pers {" << endl;
-    css << "    float: left;" << endl;
-    css << "}" << endl;
 }

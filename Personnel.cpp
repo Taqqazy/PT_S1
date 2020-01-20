@@ -2,6 +2,8 @@
 #include "misc.h"
 
 Personnel::Personnel(vector<string> vec)
+//prend en parametres un vecteur contenant les informations de Personnel
+//constructeur qui attribue pour chacune des variables de Personnel les valeurs du vecteur
 {
     login=vec[0];
     nom=normalisation(vec[1]);
@@ -12,37 +14,45 @@ Personnel::Personnel(vector<string> vec)
 }
 
 string Personnel::get_login() const
+//fonction qui retourne sous forme de string le login de chaque objet de classe Personnel
 {
     return login;
 }
 
 string Personnel::get_nom() const
+//fonction qui retourne sous forme de string le nom de chaque objet de classe Personnel
 {
     return nom;
 }
 
 string Personnel::get_prenom() const
+//fonction qui retourne sous forme de string le prenom de chaque objet de classe Personnel
 {
     return prenom;
 }
 
 string Personnel::get_job() const
+//fonction qui retourne sous forme de string le travail de chaque objet de classe Personnel
 {
     return job;
 }
 
 string Personnel::get_firm() const
+//fonction qui retourne sous forme de string l'entreprise de chaque objet de classe Personnel
 {
     return firm;
 }
 
 bool Personnel::get_image() const
+//fonction qui retourne sous forme de booleen si chaque objet de classe Personnel a bien une photo
 {
     return image;
 }
 
 
 bool operator<(Personnel const &a, Personnel const &b)
+//prend en parametres deux Personnel
+//surcharge d'operateurs pour pouvoir comparer deux Personnel et dire lequel est le plus grand en fonction de leur nom (ordre alphabetique)
 {
     if( a.get_nom() < b.get_nom() )
         return true;
@@ -50,6 +60,9 @@ bool operator<(Personnel const &a, Personnel const &b)
 }
 
 ostream& operator<<(ostream& os, const Personnel& pers)
+//prend en parametres le flux de sortie et un objet de type Personnel
+//surcharge d'operateurs dans le but de pouvoir retourner dans le flux de sortie un Personnel syntaxé en HTML
+//format de sortie : flux de sortie ostream
 {
     os << "      <div class=\"pers\">" << endl;
     if(pers.get_image())

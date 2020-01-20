@@ -1,6 +1,8 @@
 #include "htmlSyntaxe.h"
 
 void htmlSyntaxe(ofstream &html) {
+//prend en parametre une ref au flux de sortie html
+//fonction qui envoie dans le flux de sortie la syntaxe de base d'une page HTML
     html << "<!DOCTYPE html>" << endl;
     html << "<html lang=\"en\" dir=\"ltr\">" << endl;
     html << "  <head>" << endl;
@@ -19,8 +21,8 @@ void htmlSyntaxe(ofstream &html) {
     html << "        <li><a href=\"contact.html\">Contact</a></li>" << endl;
     html << "        <li><a href=\"about.html\">À propos de nous</a>" << endl;
     html << "        <ul>" << endl;
-    html << "          <li><a href=\"#\">Personnel</a></li>" << endl;
-    html << "          <li><a href=\"#\">Entreprise</a></li>" << endl;
+    html << "          <li><a href=\"personnel.html\">Personnel</a></li>" << endl;
+    html << "          <li><a href=\"entreprise.html\">Entreprise</a></li>" << endl;
     html << "        </ul>" << endl;
     html << "        </li>" << endl;
     html << "      </ul>" << endl;
