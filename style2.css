@@ -1,3 +1,17 @@
+.logo_ent {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.ent {
+    border: solid black;
+    padding: 20px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
 .photo {
     width: 105px;
     height: 135px;
@@ -20,6 +34,7 @@
 
 .pers {
     width: auto;
+    float: left;
     height: 200px;
     margin: 10px;
     text-align: center;

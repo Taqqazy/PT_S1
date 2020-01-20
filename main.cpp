@@ -20,7 +20,14 @@ int main()
         exit(1);
     }
 
-    string html_filename = "output.html";
+    bool mode;
+    cout << "Quel mode voulez vous utiliser ? 0=Personnel, 1=Entreprise" << endl;
+    cin >> mode;
+
+    string html_filename;
+    if(mode) html_filename = "entreprise.html";
+    else html_filename = "personnel.html";
+
     string css_filename = "style2.css";
     ofstream html(html_filename);
     ofstream css(css_filename);
@@ -39,10 +46,6 @@ int main()
     }
     sort(vecPers.begin(), vecPers.end());
 
-
-    bool mode;
-    cout << "Quel mode voulez vous utiliser ? 0=Personnel, 1=Entreprise" << endl;
-    cin >> mode;
 
     makeCss(css, mode);
     if(!mode)

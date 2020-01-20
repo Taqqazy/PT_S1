@@ -25,4 +25,5 @@ void htmlSyntaxe(ofstream &html) {
     html << "        </li>" << endl;
     html << "      </ul>" << endl;
     html << "      <div id=\"text-home\"><h1>Office du tourisme de Los Santos</h1></div>" << endl;
+    html << "       </div>" << endl;
 }
