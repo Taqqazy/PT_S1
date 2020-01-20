@@ -34,9 +34,11 @@
 
 .pers {
     width: auto;
-    float: left;
     height: 200px;
     margin: 10px;
     text-align: center;
 }
 
+.ent .pers {
+    float: left;
+}

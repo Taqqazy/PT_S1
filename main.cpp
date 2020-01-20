@@ -20,13 +20,35 @@ int main()
         exit(1);
     }
 
+    //si premier charactère est un saut de ligne (code ASCII=10)
+    if(csv.peek()==10)
+    {
+        cout << "fichier perso.csv vide, ou premiere ligne vide" << endl;
+        return 1;
+    }
+
+    if(ent.peek()==10)
+    {
+        cout << "fichier perso.csv vide, ou premiere ligne vide" << endl;
+        return 1;
+    }
+
     bool mode;
+    string input;
     cout << "Quel mode voulez vous utiliser ? 0=Personnel, 1=Entreprise" << endl;
-    cin >> mode;
+    cin >> input;
+    while(input!="0" && input!="1")
+    {
+        cout << "Veuillez rentrer 0 ou 1. 0=Personnel, 1=Entreprise" << endl;
+        cin >> input;
+    }
+    mode=stoi(input);
 
     string html_filename;
-    if(mode) html_filename = "entreprise.html";
-    else html_filename = "personnel.html";
+    if(mode)
+        html_filename = "entreprise.html";
+    else
+        html_filename = "personnel.html";
 
     string css_filename = "style2.css";
     ofstream html(html_filename);
@@ -45,7 +67,6 @@ int main()
         vecPers.push_back(Personnel(lineToVec(line)));
     }
     sort(vecPers.begin(), vecPers.end());
-
 
     makeCss(css, mode);
     if(!mode)
