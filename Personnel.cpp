@@ -51,15 +51,15 @@ bool operator<(Personnel const &a, Personnel const &b)
 
 ostream& operator<<(ostream& os, const Personnel& pers)
 {
-    os << "     <div class=\"pers\">" << endl;
+    os << "      <div class=\"pers\">" << endl;
     if(pers.get_image())
     {
-        os<< "          <img class=\"photo\" src=\"src/images/"+pers.get_login()+".jpg\" alt=\"Photo de " << pers.get_nom() << " " << pers.get_prenom() << "\"\>" << endl;
+        os<< "        <img class=\"photo\" src=\"src/images/"+pers.get_login()+".jpg\" alt=\"Photo de " << pers.get_nom() << " " << pers.get_prenom() << "\"\>" << endl;
     }
     else {
-        os << "         <div class=\"no_photo\"><p>?</p></div>" << endl;
+        os << "        <div class=\"no_photo\"><p>?</p></div>" << endl;
     }
-    os<< "          <p>" << pers.get_nom() << " " <<pers.get_prenom() << "<br>" << pers.get_job() << "</p>" << endl;
-    os << "     </div>" << endl;
+    os << "        <p>" << pers.get_nom() << " " <<pers.get_prenom() << "<br>" << pers.get_job() << "</p>" << endl;
+    os << "      </div>" << endl;
     return os;
 }

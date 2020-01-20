@@ -1,43 +1,236 @@
-.logo_ent {
-    display: block;
-    margin: 0 auto 20px;
-}
-.photo {
-    width: 105px;
-    height: 135px;
-}
-.no_photo {
-    border: solid red;
-    width: 105px;
-    height: 135px;
-    margin: 0 auto;
-}
-.no_photo p {
-    margin-top: 0px;
-    font-size: 200%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 135px;
+h1,h2,h3,h4 {
+  font-family: montserrat;
 }
 
-.ent
+h2
 {
-  border: solid black;
-  padding: 20px;
-  width: 90%;
+  text-align: center;
+  font-size: 200%;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  color: rgb(228,36,54);
+}
+
+h3
+{
+  font-size: 20px;
+  text-align: center;
+}
+
+h4
+{
+  padding-left: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+
+.monu
+{
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.monu p
+{
+  padding-top: 5px;
+  margin-top: 0px;
+}
+
+.picture
+{
+  width: 20vw;
   height: auto;
-  text-align: center;
-  margin: 0 auto 30px auto;
-
+  float: left;
+  margin-right: 18px;
 }
 
-.pers
+#page {
+  margin-left: 25vw;
+  margin-right: 25vw;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-indent: 15px;
+}
+
+#motto
 {
-  width: auto;
-  float: left;
-  height: 200px;
-  background-color: #FFF;
-  border: 1px solid #000;
-  margin: 10px;
+  font-family: "Brush Script MT";
   text-align: center;
+  font-style: italic;
+  font-size: 1.8em;
+}
+
+hr
+{
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(62, 103, 155,0) 10%, rgb(152, 87, 129) 25%, rgb(250, 115, 111) 35%, rgb(255, 253, 117) 50%, rgb(250, 115, 111) 65%, rgb(152, 87, 129) 75%, rgba(62, 103, 155, 0) 90%);
+  border: none;
+  margin-bottom: 30px;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+  margin-top: 0px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6) 30%, transparent);
+  display: flex;
+  justify-content: center;
+}
+
+#menu li, #menu li ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+#menu li ul {
+  position: absolute;
+  left: -999em;
+  text-align: left;
+  z-index: 1000;
+}
+
+#menu li:hover ul {
+    left: auto;
+    display: flex;
+}
+
+#menu li a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding: 14px 30px;
+  text-transform: uppercase;
+}
+
+#menu li a:before {
+  content: '';
+  width: 60px;
+  position: absolute;
+  border-bottom: 3px solid #ffffff;
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+
+#menu li a:hover:before {
+  right: 0;
+}
+
+#banniere {
+  height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(241,241,241,1), rgba(241,241,241,0) 10%), url("medias/banniere.png");
+  background-size: cover;
+}
+
+#text-home {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-shadow:
+         -3px -3px 0 #000,
+       1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+         -1px -1px 0 #000;
+  white-space: nowrap;
+}
+
+.logo {
+  max-width: 20%;
+  min-width: 100px;
+  height: auto;
+  margin-top: -10px;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+
+#spoiler2 {
+  position: absolute;
+  visibility: hidden;
+}
+
+#map {
+  max-width: 50%;
+  height: auto;
+}
+
+form {
+  margin: 0 auto;
+  width: 450px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+}
+
+footer {
+  margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footercolmn {
+  width: 15vw;
+  float: left;
+  text-align: center;
+}
+
+.footercolmn ul {
+  list-style: none;
+}
+
+.footercolmn h3 {
+  color: rgb(228,36,54);
 }

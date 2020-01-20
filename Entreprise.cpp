@@ -19,6 +19,11 @@ string Entreprise::get_nomLogo() const
     return nomLogo;
 }
 
+string Entreprise::get_slogan() const
+{
+    return slogan;
+}
+
 void Entreprise::addPers(Personnel pers)
 {
     vecPersEnt.push_back(pers);
@@ -40,20 +45,21 @@ void entrepriseAssign(vector<Entreprise> &ent, vector<Personnel> &pers)
                 pers.erase(pers.begin()+y);
                 y--;
             }
-
         }
     }
 }
 
 ostream& operator<<(ostream& os, Entreprise& ent)
 {
-    os << "<div class=\"ent\">" << endl;
-    os << "     <img class=\"logo_ent\" src=\"src/logos/" << ent.get_nomLogo() <<"\" alt=\"Logo de " << ent.get_nom() << "\" width=\"105\" height=\"105\" >" << endl;
+    os << "    <div class=\"ent\">" << endl;
+    os << "      <h2>" << ent.get_nom() << "</h2>";
+    os << "      <p>" << ent.get_slogan() << "<p>";
+    os << "      <img class=\"logo_ent\" src=\"src/logos/" << ent.get_nomLogo() <<"\" alt=\"Logo de " << ent.get_nom() << "\" width=\"105\" height=\"105\" >" << endl;
     vector<Personnel> vecPersEnt = ent.get_vecPersEnt();
     for(int i=0; i<vecPersEnt.size(); i++) {
             os << vecPersEnt[i];
     }
-    os << "<br clear=\"both\"/>" << endl;
-    os << "</div>" << endl;
+    os << "      <br style=\"clear:both\"/>" << endl;
+    os << "    </div>" << endl;
     return os;
 }
