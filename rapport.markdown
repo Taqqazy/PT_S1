@@ -22,9 +22,13 @@ Celui-ci reprendra le même format que le mode Personnel, tout en réunissant ce
 
 Le fait de ne pas utiliser de paramètre en ligne de commande dans notre programme réduit grandement le nombre d'erreurs.
 
+#### Fichiers vides :
+
+Dans le cas de fichiers vides (Entreprise.csv ou Perso.csv), le programme retournera un message et un code d'erreur correspondant.
+
 #### Fichiers manquants :
 
-Dans le cas de fichiers manquants (Entreprise.csv ou Perso.csv), le programme retournera un message et un code d'erreur correspondant.
+Dans le cas de fichiers manquants, le programme retournera un message et un code d'erreur correspondant.
 
 #### Choix rentré différent de 0 ou 1 :
 
