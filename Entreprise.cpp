@@ -53,7 +53,7 @@ ostream& operator<<(ostream& os, Entreprise& ent)
     for(int i=0; i<vecPersEnt.size(); i++) {
             os << vecPersEnt[i];
     }
+    os << "<br clear=\"both\"/>" << endl;
     os << "</div>" << endl;
     return os;
 }
-
